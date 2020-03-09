@@ -5,9 +5,9 @@ from conans import ConanFile, CMake, tools
 class LaszipConan(ConanFile):
     name = "laszip"
     description = "C++ library for lossless LiDAR compression."
-    license = "LGPL-2.1-or-later"
-    topics = ("conan", "laszip", "las", "laz", "lidar", "compression")
-    homepage = "https://laszip.org"
+    license = "LGPL-2.1"
+    topics = ("conan", "laszip", "las", "laz", "lidar", "compression", "decompression")
+    homepage = "https://github.com/LASzip/LASzip"
     url = "https://github.com/conan-io/conan-center-index"
     exports_sources = "CMakeLists.txt"
     generators = "cmake"
@@ -31,7 +31,7 @@ class LaszipConan(ConanFile):
 
     def source(self):
         tools.get(**self.conan_data["sources"][self.version])
-        os.rename("laszip-src-" + self.version, self._source_subfolder)
+        os.rename("LASzip-" + self.version, self._source_subfolder)
 
     def build(self):
         # Do not build laszip_api, only laszip
