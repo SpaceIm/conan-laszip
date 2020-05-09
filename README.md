@@ -4,7 +4,7 @@
 
 | Windows | Linux | macOS |
 |:-------:|:-----:|:-----:|
-|[![Build status](https://ci.appveyor.com/api/projects/status/uuv2mcgsrwqbcyht/branch/testing%2F3.4.3?svg=true)](https://ci.appveyor.com/project/SpaceIm/conan-laszip)|![.github/workflows/conan.yml](https://github.com/SpaceIm/conan-laszip/workflows/.github/workflows/conan.yml/badge.svg?branch=testing%2F3.4.3)|[![Build Status](https://travis-ci.com/SpaceIm/conan-laszip.svg?branch=testing%2F3.4.3)](https://travis-ci.com/SpaceIm/conan-laszip)|
+|[![Build status](https://ci.appveyor.com/api/projects/status/uuv2mcgsrwqbcyht/branch/testing%2F3.4.3?svg=true)](https://ci.appveyor.com/project/SpaceIm/conan-laszip)|[![Build status](https://github.com/SpaceIm/conan-laszip/workflows/.github/workflows/conan.yml/badge.svg?branch=testing%2F3.4.3)](https://github.com/SpaceIm/conan-laszip/actions?query=branch%3Atesting%2F3.4.3)|[![Build Status](https://travis-ci.com/SpaceIm/conan-laszip.svg?branch=testing%2F3.4.3)](https://travis-ci.com/SpaceIm/conan-laszip)|
 
 ## Description
 
