@@ -55,5 +55,17 @@ class LaszipConan(ConanFile):
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
+        if not self.options.shared and self._stdcpp_library:
+            self.cpp_info.system_libs.append(self._stdcpp_library)
         if self.options.shared:
             self.cpp_info.defines.append("LASZIP_DYN_LINK")
+
+    @property
+    def _stdcpp_library(self):
+        libcxx = self.settings.get_safe("compiler.libcxx")
+        if libcxx in ("libstdc++", "libstdc++11"):
+            return "stdc++"
+        elif libcxx in ("libc++",):
+            return "c++"
+        else:
+            return False
